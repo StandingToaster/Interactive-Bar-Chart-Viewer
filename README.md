@@ -25,3 +25,14 @@ All interactions and rendering are done directly on a canvas using SimpleKit, wi
 - SimpleKit (Canvas Mode)  
 - HTML5 Canvas API  
 - Node.js and npm  
+
+## Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/StandingToaster/Interactive-Bar-Chart-Viewer.git
+   cd Interactive-Bar-Chart-Viewer
+2. Install Dependancies
+   npm install
+   npm install simplekit
+3. Run Development Server
+   npm run dev -o
