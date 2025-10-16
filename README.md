@@ -1,43 +1,32 @@
 # Interactive Bar Chart Viewer
 
-A dynamic bar chart viewer built with TypeScript and SimpleKit for the CS349 (User Interfaces) course at the University of Waterloo.
+[Live Demo](https://harsimrankalsi.com/)
 
-## Overview
-This application visualizes datasets as animated, interactive bar charts.  
-Users can:
-- Hover over bars to view their values  
-- Click bars to adjust their heights using arrow keys  
-- Switch datasets using numbered buttons  
-- Trigger next or previous datasets using flick gestures  
-
-All interactions and rendering are done directly on a canvas using SimpleKit, with no DOM manipulation or CSS styling.
+A dynamic bar chart viewer built with TypeScript and SimpleKit for the CS349 (User Interfaces) course at the University of Waterloo. The entire UI is rendered on a single canvas—no DOM layout or CSS.
 
 ## Features
-- Responsive layout that scales with window size  
-- Smooth animations for bar height changes and button selection  
-- Custom flick gesture recognition (left and right)  
-- Keyboard input handling (arrow keys with Shift modifiers)  
-- Data persistence between datasets  
+- Responsive layout that scales with window size
+- Animated bar transitions and button selection states
+- Hover tooltips and keyboard-controlled bar adjustments (Shift for larger steps)
+- Dataset switching via buttons or flick gestures
+- Persistence of bar adjustments while you explore datasets
 
-## Technologies Used
-- TypeScript  
-- Vite  
-- SimpleKit (Canvas Mode)  
-- HTML5 Canvas API  
-- Node.js and npm  
+## Getting Started
+```bash
+git clone https://github.com/StandingToaster/Interactive-Bar-Chart-Viewer.git
+cd Interactive-Bar-Chart-Viewer
+npm install
+npm run dev -- --open
+```
 
-## Setup
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/StandingToaster/Interactive-Bar-Chart-Viewer.git
-   cd Interactive-Bar-Chart-Viewer
-2. Install Dependancies
-   npm install
-   npm install simplekit
-3. Run Development Server
-   npm run dev -o
+`npm install` pulls in SimpleKit automatically via `package.json`.
+
+## Development Scripts
+- `npm run dev` – start the Vite development server
+- `npm run build` – type-check and produce the production build in `dist`
+- `npm run preview` – serve the built bundle locally for a final sanity check
 
 ## Deployment
-- Push changes to the `main` branch to trigger the GitHub Actions workflow in `.github/workflows/deploy.yml`.
-- On the repository settings page, enable GitHub Pages and select "GitHub Actions" as the source (one-time setup).
-- The app is published at `https://harsimrankalsi.com/`. If you fork this project, update `vite.config.ts` to set the correct `base` path and replace `public/CNAME` with your own domain (or delete it to fall back to the GitHub Pages default URL).
+A GitHub Actions workflow (`.github/workflows/deploy.yml`) builds the site and publishes it to GitHub Pages whenever `main` is updated or the workflow is dispatched manually. The production app is hosted at **https://harsimrankalsi.com/**.
+
+Forking this project? Update `vite.config.ts` with your own `base` path and swap the `public/CNAME` file for your domain (or delete it to fall back to the default `<username>.github.io` URL).
