@@ -40,4 +40,4 @@ All interactions and rendering are done directly on a canvas using SimpleKit, wi
 ## Deployment
 - Push changes to the `main` branch to trigger the GitHub Actions workflow in `.github/workflows/deploy.yml`.
 - On the repository settings page, enable GitHub Pages and select "GitHub Actions" as the source (one-time setup).
-- After the workflow finishes, the site is available at `https://standingtoaster.github.io/Interactive-Bar-Chart-Viewer/` (update the URL if you fork this repo).
+- The app is published at `https://harsimrankalsi.com/`. If you fork this project, update `vite.config.ts` to set the correct `base` path and replace `public/CNAME` with your own domain (or delete it to fall back to the GitHub Pages default URL).

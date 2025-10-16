@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/Interactive-Bar-Chart-Viewer/",
+  base: "/",
   build: {
     rollupOptions: {
       output: {
